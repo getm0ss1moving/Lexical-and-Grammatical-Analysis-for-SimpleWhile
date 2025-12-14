@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(make clean:*)",
-      "Bash(./simplewhile_parser:*)"
+      "Bash(./simplewhile_parser:*)",
+      "Bash(dir /b:*)",
+      "Bash(bison:*)",
+      "Bash(flex:*)",
+      "Bash(gcc:*)",
+      "Bash(chmod:*)",
+      "Bash(./run_all_tests.sh:*)"
     ],
     "deny": [],
     "ask": []

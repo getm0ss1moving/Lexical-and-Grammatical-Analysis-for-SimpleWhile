@@ -35,6 +35,7 @@ struct full_annotated_cmd *parsed_program = NULL;
 %type <cmd_val> cmd simple_cmd
 %type <program_val> program
 
+%right FORALL EXISTS
 %left IFF
 %left IMPLY
 %left OR
@@ -176,11 +177,11 @@ atomic_bool:
     ;
 
 quant_bool:
-    FORALL IDENT LPAREN expr_bool RPAREN {
-        $$ = TQuant(T_FORALL, $2, $4);
+    FORALL IDENT expr_bool {
+        $$ = TQuant(T_FORALL, $2, $3);
     }
-    | EXISTS IDENT LPAREN expr_bool RPAREN {
-        $$ = TQuant(T_EXISTS, $2, $4);
+    | EXISTS IDENT expr_bool {
+        $$ = TQuant(T_EXISTS, $2, $3);
     }
     ;
 

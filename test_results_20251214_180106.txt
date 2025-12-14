@@ -1,0 +1,23 @@
+SimpleWhile Parser 测试报告
+======================================
+测试时间: 2025-12-14 18:01:06
+总测试数: 13
+通过测试: 13
+失败测试: 0
+通过率: 100%
+======================================
+
+测试文件列表：
+  - test_advanced.sw
+  - test_arithmetic.sw
+  - test_comprehensive.sw
+  - test_error_syntax.sw
+  - test_example.sw
+  - test_full_features.sw
+  - test_missing_invariant.sw
+  - test_nested_quantifiers.sw
+  - test_operators.sw
+  - test_quantifier_precedence.sw
+  - test_quantifier_with_parens.sw
+  - test_quantifiers.sw
+  - test_simple.sw
